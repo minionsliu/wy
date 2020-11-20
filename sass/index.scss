@@ -1,0 +1,98 @@
+// 变量 $+变量名
+$w:400px;
+$h:200px;
+$c:red;
+$len:50%*10; // 500%
+/* 标题样式 */
+h1{
+  width: $w;
+  height: $h;
+  color: $c;
+  background-color: #ccc;
+}
+
+// sass中的注释有两种
+// 1. // sass有的注释，不会被编译到css文件中
+// /* xxx */ 会被编译到css文件中
+
+// 嵌套语法
+.box{
+  width: $w;
+  background-color: lightblue;
+  h2{
+    font-size: 30px;
+    color: blue;
+  }
+  .show{
+    width: 300px;
+    height: 100px;
+    span{
+      color: red;
+    }
+    p{
+      color: yellow;
+    }
+  }
+}
+
+// & 指向父选择器
+a{
+  color: blue;
+  &:hover{
+    color: red;
+  }
+}
+.content{
+  width: 500px;
+  &-title{
+    color: red;
+  }
+  &-main{
+    color: blue;
+  }
+}
+
+// @import 引入外部样式
+@import 'header.scss';
+
+// @mixin 混合器
+@mixin nostyle {
+  list-style: none;
+  li{
+    padding: 0;
+    color: blue;
+  }
+}
+.list{
+  width: 500px;
+  @include nostyle;
+}
+
+// 混合器传参
+@mixin common($w,$h,$c) {
+  width: $w;
+  height: $h;
+  color: $c;
+}
+.box1{
+  background-color: #ccc;
+  @include common(500px,200px,red);
+}
+.box2{
+  padding: 10px;
+  @include common(300px,100px,blue);
+}
+
+// 继承
+.box3{
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+}
+.box4{
+  width: 500px;
+  background: pink;
+  @extend .box3;
+}
+
+
