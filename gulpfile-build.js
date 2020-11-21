@@ -25,6 +25,12 @@ async function script(){
   .pipe(dest('./rev/js'))// 保存
 }
 
+//编译font
+task('font', async ()=>{
+  src('./font/*.*')
+  .pipe(dest('./dist/font'))
+  .pipe(load.connect.reload())
+})
 // 处理sass
 async function sass(){
   src('./sass/*.scss')

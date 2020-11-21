@@ -3,10 +3,12 @@ let {task,src,dest,watch,series,parallel} = require('gulp')
 let load = require('gulp-load-plugins')()
 let del = require('del')
 
+
 // 删除dist目录
 task('delDist', async ()=>{
   await del('./dist')
 })
+
 
 // 处理图片
 task('img', async ()=>{
@@ -29,7 +31,12 @@ task('html', async ()=>{
   .pipe(dest('./dist'))
   .pipe(load.connect.reload())
 })
-
+//编译font
+task('font', async ()=>{
+  src('./font/*.*')
+  .pipe(dest('./dist/font'))
+  .pipe(load.connect.reload())
+})
 // 编译sass
 task('sass', async ()=>{
   src('./sass/*.scss')

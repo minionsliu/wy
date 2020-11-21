@@ -1,0 +1,330 @@
+#mid-wrap {
+  width: 1090px;
+  margin: 0 auto; }
+
+.sprite-m {
+  background: url(../img/wy-top.png) no-repeat; }
+
+#header {
+  background: #333;
+  line-height: 36px;
+  height: 36px; }
+  #header #mid-wrap .notice {
+    float: left;
+    color: #cc9756;
+    text-decoration: underline; }
+    #header #mid-wrap .notice p img {
+      margin-right: 5px; }
+  #header #mid-wrap .notice:hover {
+    color: #fff; }
+  #header #mid-wrap ul {
+    float: right;
+    height: 36px; }
+    #header #mid-wrap ul li {
+      float: left;
+      color: #cccccc;
+      position: relative; }
+      #header #mid-wrap ul li a {
+        margin: 0 10px;
+        color: #ccc; }
+      #header #mid-wrap ul li a:hover {
+        color: #fff; }
+      #header #mid-wrap ul li span {
+        margin: 0 10px 0 -4px;
+        color: #84947c; }
+      #header #mid-wrap ul li i {
+        display: inline-block;
+        width: 7px;
+        height: 11px;
+        background: url(../img/phone.png) no-repeat;
+        background-position: 0 -36px;
+        margin: 0 -5px 0 10px;
+        vertical-align: middle; }
+      #header #mid-wrap ul li .top-list {
+        position: absolute;
+        left: 2px;
+        top: 31px;
+        display: none; }
+        #header #mid-wrap ul li .top-list .sj {
+          margin: 0 auto;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid #fff; }
+        #header #mid-wrap ul li .top-list .sj-b {
+          background: #fff;
+          padding: 0 6px;
+          border-style: solid;
+          border-width: 0 1px 1px; }
+          #header #mid-wrap ul li .top-list .sj-b p {
+            border-bottom: 1px solid #ddd;
+            text-align: center; }
+            #header #mid-wrap ul li .top-list .sj-b p a {
+              color: #acacac; }
+          #header #mid-wrap ul li .top-list .sj-b .last-p {
+            border-color: transparent; }
+          #header #mid-wrap ul li .top-list .sj-b img {
+            padding-top: 8px;
+            display: block; }
+      #header #mid-wrap ul li .top-list-left {
+        left: -30px; }
+    #header #mid-wrap ul li:hover .top-list {
+      display: block; }
+
+#nav #mid-wrap {
+  overflow: hidden; }
+  #nav #mid-wrap .logo {
+    margin-top: 28px;
+    float: left; }
+    #nav #mid-wrap .logo a {
+      display: block;
+      width: 210px;
+      height: 50px;
+      background: url(../img/wy-top.png) no-repeat;
+      background-position: 0 -304px; }
+      #nav #mid-wrap .logo a h1 {
+        text-indent: -9999px; }
+  #nav #mid-wrap .top-midde {
+    float: left;
+    margin: 26px 0 0 166px; }
+    #nav #mid-wrap .top-midde .search {
+      overflow: hidden;
+      border-radius: 50px;
+      border: 1px solid #cc9756; }
+      #nav #mid-wrap .top-midde .search input {
+        width: 440px;
+        height: 36px;
+        float: left;
+        text-indent: 20px;
+        border: none;
+        outline: none; }
+      #nav #mid-wrap .top-midde .search button {
+        height: 36px;
+        width: 90px;
+        border: none;
+        background: #cc9756;
+        font-size: 18px;
+        color: #fff; }
+    #nav #mid-wrap .top-midde p {
+      margin-top: 8px;
+      color: #cc9756;
+      padding-left: 10px; }
+      #nav #mid-wrap .top-midde p span {
+        padding: 0 8px; }
+  #nav #mid-wrap .to-shopcar {
+    margin: 28px 0 0 48px;
+    float: left;
+    box-sizing: border-box;
+    width: 134px;
+    height: 38px;
+    padding: 8px 0;
+    border: 1px solid  #cc9756;
+    border-radius: 27px;
+    font-size: 14px;
+    color: #cc9756; }
+    #nav #mid-wrap .to-shopcar i {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background-position: -2px -148px;
+      margin-left: 26px;
+      vertical-align: middle; }
+    #nav #mid-wrap .to-shopcar span {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: red;
+      text-align: center;
+      line-height: 18px;
+      color: #fff;
+      font-size: 14px; }
+  #nav #mid-wrap .nav-list {
+    padding-top: 26px;
+    clear: both; }
+    #nav #mid-wrap .nav-list ul {
+      height: 28px;
+      line-height: 28px; }
+      #nav #mid-wrap .nav-list ul li {
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 600;
+        float: left;
+        margin-left: 55px;
+        border-bottom: 3px solid transparent; }
+        #nav #mid-wrap .nav-list ul li a {
+          color: #000; }
+        #nav #mid-wrap .nav-list ul li .list-box {
+          width: 1200px;
+          position: absolute;
+          border: 1px solid;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background: #fff;
+          overflow: hidden;
+          display: none; }
+          #nav #mid-wrap .nav-list ul li .list-box dl {
+            width: 124px;
+            float: left;
+            padding: 0 8px; }
+            #nav #mid-wrap .nav-list ul li .list-box dl dt {
+              font-size: 16px;
+              border-bottom: 1px solid gray; }
+            #nav #mid-wrap .nav-list ul li .list-box dl dd a {
+              display: block;
+              overflow: hidden; }
+              #nav #mid-wrap .nav-list ul li .list-box dl dd a img {
+                width: 40px;
+                height: 50px;
+                float: left; }
+              #nav #mid-wrap .nav-list ul li .list-box dl dd a span {
+                color: #000;
+                float: left;
+                width: 80px;
+                height: 50px;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 14px; }
+              #nav #mid-wrap .nav-list ul li .list-box dl dd a span::after {
+                content: "";
+                display: inline-block;
+                width: 0px;
+                background: red;
+                height: 100%;
+                vertical-align: middle; }
+            #nav #mid-wrap .nav-list ul li .list-box dl dd:hover span {
+              color: #cc9756; }
+      #nav #mid-wrap .nav-list ul li:hover .list-box {
+        display: block; }
+      #nav #mid-wrap .nav-list ul li:nth-child(1) {
+        margin: 0;
+        border-bottom: 3px solid #cc9756; }
+        #nav #mid-wrap .nav-list ul li:nth-child(1) a {
+          color: #cc9756; }
+      #nav #mid-wrap .nav-list ul li:hover {
+        border-bottom: 3px solid #cc9756; }
+      #nav #mid-wrap .nav-list ul li:hover a {
+        color: #cc9756; }
+
+#footer .ft-icon {
+  background: url(../img/footicon.png); }
+
+#footer .ft-server {
+  padding-top: 54px;
+  padding-bottom: 30px;
+  overflow: hidden; }
+  #footer .ft-server dl {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 36px 30px; }
+    #footer .ft-server dl dt {
+      text-align: center;
+      line-height: 22px;
+      font-size: 16px; }
+  #footer .ft-server .ft-left dd {
+    overflow: hidden;
+    margin-top: 23px;
+    text-align: center; }
+    #footer .ft-server .ft-left dd a {
+      display: inline-block;
+      width: 76px;
+      height: 100px;
+      border: 1px solid #e8e8e8;
+      text-align: center;
+      margin: 0 10px; }
+      #footer .ft-server .ft-left dd a span {
+        margin: 27px auto 0;
+        display: block;
+        width: 30px;
+        height: 26px; }
+      #footer .ft-server .ft-left dd a .ej {
+        background-position: 0 -290px; }
+      #footer .ft-server .ft-left dd a .mas {
+        background-position: 0 -98px; }
+      #footer .ft-server .ft-left dd a i {
+        font-size: 14px;
+        color: #000;
+        line-height: 46px; }
+    #footer .ft-server .ft-left dd a:hover i {
+      color: #cc9756; }
+  #footer .ft-server .ft-mid {
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9; }
+    #footer .ft-server .ft-mid p {
+      margin-top: 20px;
+      font-size: 14px; }
+    #footer .ft-server .ft-mid .nt-us {
+      margin-top: 10px;
+      font-size: 14px; }
+      #footer .ft-server .ft-mid .nt-us a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin: 0 5px;
+        vertical-align: middle; }
+      #footer .ft-server .ft-mid .nt-us a:nth-child(1) {
+        background-position: 0 -470px; }
+      #footer .ft-server .ft-mid .nt-us a:nth-child(2) {
+        background-position: 0 -428px; }
+      #footer .ft-server .ft-mid .nt-us a:nth-child(3) {
+        background-position: 0 -326px; }
+  #footer .ft-server .ft-right {
+    text-align: center; }
+    #footer .ft-server .ft-right dd img {
+      margin-top: 20px; }
+    #footer .ft-server .ft-right dd p {
+      color: #cc9756;
+      margin-top: 5px; }
+
+#footer .copyright {
+  background: #414141; }
+  #footer .copyright .cp-top {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    overflow: hidden; }
+    #footer .copyright .cp-top li {
+      float: left;
+      color: #ffe1b5;
+      font-size: 16px;
+      margin-right: 110px; }
+      #footer .copyright .cp-top li span {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 16px; }
+    #footer .copyright .cp-top li:nth-child(1) span {
+      background-position: 0 -134px; }
+    #footer .copyright .cp-top li:nth-child(2) span {
+      background-position: 0 -368px; }
+    #footer .copyright .cp-top li:nth-child(3) span {
+      background-position: 0 0; }
+    #footer .copyright .cp-top li:nth-child(4) {
+      margin-right: 0; }
+      #footer .copyright .cp-top li:nth-child(4) span {
+        background-position: 0 -193px; }
+  #footer .copyright .cp-list {
+    margin-top: 30px;
+    text-align: center;
+    color: #748e99;
+    overflow: hidden; }
+    #footer .copyright .cp-list li {
+      display: inline-block;
+      margin: 0 10px; }
+  #footer .copyright .cp-btm {
+    line-height: 28px;
+    text-align: center;
+    color: #748e99;
+    padding: 20px 0; }
+    #footer .copyright .cp-btm p span {
+      display: inline-block;
+      width: 22px;
+      height: 24px;
+      background: url(../img/yx-top.png) no-repeat;
+      background-position: -39px 0; }
+
+#main {
+  height: 500px; }
