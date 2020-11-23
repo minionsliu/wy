@@ -1,0 +1,84 @@
+.mid-wrap-r {
+  width: 1100px;
+  margin: 0 auto; }
+
+#rg-logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #rg-logo .rg-logo-img {
+    width: 168px;
+    height: 24px; }
+    #rg-logo .rg-logo-img img {
+      width: 100%;
+      height: 100%; }
+  #rg-logo span a {
+    font-size: 14px; }
+  #rg-logo span i {
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    background: red;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 8px;
+    color: #fff; }
+
+#content-wrap {
+  background: #f8f8f8;
+  padding-top: 22px; }
+  #content-wrap .content {
+    background: #fff; }
+    #content-wrap .content .mid-content {
+      margin: 0 auto;
+      width: 540px;
+      padding-top: 60px; }
+      #content-wrap .content .mid-content h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #2c82ff;
+        margin-bottom: 40px; }
+      #content-wrap .content .mid-content .input-box-rg {
+        padding: 20px 0;
+        width: 486px;
+        height: 46px;
+        margin: 0 auto;
+        position: relative; }
+        #content-wrap .content .mid-content .input-box-rg input {
+          height: 100%;
+          width: 100%;
+          border: 1px solid #dcdee2;
+          text-indent: 20px; }
+        #content-wrap .content .mid-content .input-box-rg .can-see {
+          position: absolute;
+          width: 19px;
+          height: 14px;
+          right: 5px;
+          top: 35px;
+          cursor: pointer; }
+          #content-wrap .content .mid-content .input-box-rg .can-see img {
+            width: 100%;
+            height: 100%; }
+      #content-wrap .content .mid-content p {
+        padding-left: 27px;
+        line-height: 30px;
+        color: #666666; }
+        #content-wrap .content .mid-content p input {
+          border-color: blue;
+          vertical-align: middle;
+          margin-top: -2px; }
+        #content-wrap .content .mid-content p a {
+          color: #2c82ff; }
+      #content-wrap .content .mid-content button {
+        display: block;
+        margin: 0 auto 15px;
+        width: 486px;
+        height: 46px;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background: #2c82ff;
+        cursor: pointer; }
