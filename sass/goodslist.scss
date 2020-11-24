@@ -43,6 +43,7 @@
             }
         }
         .goods-msg{
+            padding-top: 30px;
             h3{
                 text-align: center;
                 line-height: 44px;
@@ -51,6 +52,8 @@
             }
             .goods-p{
                 padding: 23px 0 45px;
+                text-align: center;
+                color: #999;
             }
             .goods-ul{
                 width: 1100px;
@@ -58,6 +61,8 @@
                     float: left;
                     width: 245px;
                     margin-right: 10px;
+                    position: relative;
+                    margin-bottom: 50px;
                     .a-img{
                         width: 245px;
                         height: 245px;
@@ -68,6 +73,73 @@
                             height: 100%;
                         }
                     }
+                    .checked-icon{
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        width: 53px;
+                        background: #f4f0ea;
+                        color: #a7936e;
+                        height: 20px;
+                        border: 1px solid #a7936e;
+                        border-radius: 3px;
+                        line-height: 20px;
+                        text-align: center; 
+                    }
+                    .colors-aside{
+                        width: 22px;
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        span{
+                            display: block;
+                            width: 22px;
+                            height: 22px;
+                            margin-bottom: 4px;
+                            cursor: pointer;
+                        }
+                        span:nth-child(1){
+                            background: red;
+                        }
+                        span:nth-child(2){
+                            background: blue;
+                        }
+                        span:nth-child(3){
+                            background: yellow;
+                        }
+                    }
+                    .sp-price{
+                        width: 34px;
+                        height: 20px;
+                        margin: 8px auto 4px;
+                        background: #e36844;
+                        text-align: center;
+                        line-height: 20px;
+                        color: #fff;
+                    }
+                    .goods-dec{
+                        display: block;
+                        line-height: 18px;
+                        width: 160px;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    .price{
+                        color: #d4282d;
+                        display: block;
+                        width: 130px;
+                        line-height: 34px;
+                        text-align: center;
+                        border-bottom: 1px solid #e8e8e8;
+                        margin: 0 auto;
+                    }
+                    p{
+                        text-align: center;
+                        color: #999;
+                        line-height: 50px;
+                        padding-bottom: 10px;
+                    }
+                    
                 }
             }
         }

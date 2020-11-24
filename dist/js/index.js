@@ -36,7 +36,19 @@ var mySwiper = new Swiper('.swiper-container', {
 // })
 // $('body').scroll()
 //侧边导航吸顶
-//首页登录注册点击事件
+
+var navLW = document.querySelector('.nav-list-wrap');
+
+window.onscroll = function () {
+  if (document.documentElement.scrollTop >= 133) {
+    navLW.style.position = 'fixed';
+    navLW.style.left = 0;
+    navLW.style.top = 0;
+  } else {
+    navLW.style.position = 'static';
+  }
+}; //首页登录注册点击事件
+
 
 $('.login-open').click(function () {
   $('.login').css('display', 'block');

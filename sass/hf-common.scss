@@ -201,6 +201,9 @@
     }
     .nav-list-wrap{
         position: relative;
+        background: #fff;
+        width: 100%;
+        z-index: 9999;
         .nav-list{
             padding-top: 26px;
              clear: both;

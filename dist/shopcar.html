@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hf-common.css">
+    <link rel="stylesheet" href="./css/shopcar.css">
+</head>
+<body>
+<div class="shopcar-wrap" id="mid-wrap">
+    <!--  -->
+    <div class="coupon-box clearfix">
+        <div class="coupon-show">
+            <i>
+                购物车可领优惠券
+            </i>
+            <span>
+                领券 >
+            </span>
+        </div>
+        <div class="coupon-hide">
+            <p>满99减20</p>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="shopcar-box">
+        <!-- 商品title -->
+        <div class="shopcar-title shopcar-common">
+            <input type="checkbox" class="shopcar-all">全选
+            <span class="msg">商品信息</span>
+            <span class="price">单价</span>
+            <span class="num">数量</span>
+            <span class="count">小计</span>
+            <span class="edit">操作</span>
+        </div>
+        <!-- 商品列表 -->
+        <ul class="shopcar-goodslist">
+            <p class="manjian shopcar-common">
+                <i>满赠</i>
+                <a href="#">继续凑单>></a>
+            </p>
+            <li class="shopcar-goods-li shopcar-common">
+                <input type="checkbox">
+                <span class="shopcar-img">
+                <img src="https://yanxuan-item.nosdn.127.net/7a0378dfdec08c613b6f537abe0499fb.png?type=webp&quality=95&thumbnail=200x200&imageView" alt="">
+                </span>
+                <div class="shopcar-list-msg">
+                    <p>电动红酒开瓶器</p>
+                    <span class="item-tab">
+                        深空灰 >
+                    </span>
+                </div>
+                <div class="shopcar-price-single">
+                    ¥<span>199.00</span>
+                    <i>¥299.00</i>
+                </div>
+                <div class="shopcar-add-reduce">
+                    <span>-</span>
+                    <input type="text">
+                    <span>+</span>
+                </div>
+                <div class="shopcar-price-single">
+                    ¥<span>199.00</span>
+                </div>
+                <div class="shopcar-edit">
+                    <span class="moveto-fva"> 移入收藏夹</span><br>
+                    <span class="delete">删除</span>
+                </div>
+            </li> <li class="shopcar-goods-li shopcar-common">
+                <input type="checkbox">
+                <span class="shopcar-img">
+                <img src="https://yanxuan-item.nosdn.127.net/7a0378dfdec08c613b6f537abe0499fb.png?type=webp&quality=95&thumbnail=200x200&imageView" alt="">
+                </span>
+                <div class="shopcar-list-msg">
+                    <p>电动红酒开瓶器</p>
+                    <span class="item-tab">
+                        深空灰 >
+                    </span>
+                </div>
+                <div class="shopcar-price-single">
+                    ¥<span>199.00</span>
+                    <i>¥299.00</i>
+                </div>
+                <div class="shopcar-add-reduce">
+                    <span>-</span>
+                    <input type="text">
+                    <span>+</span>
+                </div>
+                <div class="shopcar-price-single">
+                    ¥<span>199.00</span>
+                </div>
+                <div class="shopcar-edit">
+                    <span class="moveto-fva"> 移入收藏夹</span><br>
+                    <span class="delete">删除</span>
+                </div>
+            </li>
+        </ul>
+        <div class="buy-now shopcar-common">
+            <input type="checkbox" class="all">
+            <i>已选(<em class="checked-num">11</em>)</i>
+            <span class="delete-some">批量删除</span>
+            <span class="delete-erro">清空失效商品</span>
+            <div class="goods-price-a">
+                商品合计:<span class="price-all">¥300.00</span><br>
+                已优惠:<span class="price-yh">-¥23.00</span>
+            </div>
+            <p class="should-pay">
+                应付金额: <span>¥3333</span>
+            </p>
+            <button class="pay-now">
+                下单
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

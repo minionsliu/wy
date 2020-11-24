@@ -153,7 +153,10 @@
       font-size: 14px; }
 
 #nav .nav-list-wrap {
-  position: relative; }
+  position: relative;
+  background: #fff;
+  width: 100%;
+  z-index: 9999; }
   #nav .nav-list-wrap .nav-list {
     padding-top: 26px;
     clear: both; }

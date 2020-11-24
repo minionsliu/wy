@@ -1,0 +1,193 @@
+.shopcar-wrap{
+    padding-top: 10px;
+    .coupon-box{
+        box-sizing: border-box;
+        border: 1px solid #eaeaea;
+       .coupon-show{
+        display: flex;
+        height: 40px;
+        i{
+            float: left;
+            width: 1000px;
+            align-self: center;
+            text-indent: 30px;
+        }
+        span{
+            flex: 1;
+            // align-self: center;
+            line-height: 38px;
+            text-align: center;
+            background: #e36844;
+            color: #fff;
+        }
+       }
+        .coupon-hide{
+            // display: none;
+            border-top: 1px solid #eaeaea;
+            height: 300px;
+        }
+    }
+    //盒子公共样式
+    .shopcar-common{
+        background: #f5f5f5;
+        border: 1px solid #e8e8e8;
+        box-sizing: border-box;
+    }
+    .shopcar-box{
+        padding-top: 20px;
+        .shopcar-title{
+            text-indent: 20px;
+            line-height: 48px;
+            input{
+                vertical-align: middle;
+                height: 48px;
+                margin-right: 15px;
+            }
+            .msg{
+                margin-left: 100px;
+            }
+            .price{
+                margin-left: 270px;
+            }
+            .num{
+                margin-left: 148px;
+            }
+            .count{
+                margin-left: 144px;
+            }
+            .edit{
+                margin-left: 80px;
+            }
+        }
+        .shopcar-goodslist{
+            .manjian{
+                height: 44px;
+                margin-top: 20px;
+                line-height: 44px;
+                text-indent: 50px;
+                a{
+                    color: blue;
+                    margin-left: 10px;
+                }
+            }
+            .shopcar-goods-li{
+                display: flex;
+                margin-top: 20px;
+                padding: 20px 0;
+                margin-bottom: 20px;
+                input[type='checkbox']{
+                    align-self: center;
+                    margin: 0 20px;
+                }
+                .shopcar-img{
+                    border: 1px solid #eaeaea;
+                    box-sizing: border-box;
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 20px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .shopcar-list-msg{
+                    width: 290px;
+                    margin-right: 20px;
+                    line-height: 20px;
+                    p{
+                        font-size: 14px;
+                    }
+                    span.item-tab{
+                        color: #999999;
+                    }
+                }
+                .shopcar-price-single{
+                    width: 140px;
+                    font-size: 14px;
+                    color: red;
+                    i{
+                        text-decoration: line-through;
+                        color: #999;
+                        font-size: 12px;
+                    }
+                }
+                .shopcar-add-reduce{
+                    width: 108px;
+                    height: 26px;
+                    overflow: hidden;
+                    margin-right: 100px;
+                    input{
+                        float: left;
+                        width: 58px;
+                        height: 24px;
+                        border: none;
+                        border-top: 1px solid #ddd;
+                        border-bottom: 1px solid #ddd;
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+                    span{
+                        float: left;
+                        width: 25px;
+                        height: 24px;
+                        border: 1px solid #ddd;
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+                }
+                .shopcar-edit{
+                    color: #666666;
+                    cursor: pointer;
+                }
+            }
+        }
+        .buy-now{
+            height: 70px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            .all{
+                margin-right: 15px;
+            }
+            i{
+                margin-right: 38px;
+            }
+            .delete-some{
+                margin-right: 32px;
+            }
+            .delete-erro{
+                margin-right: 190px;
+            }
+            .goods-price-a{
+                color: #999;
+                .price-all{
+                    margin-left: 40px;
+                }
+                .price-yh{
+                    margin-left: 50px;
+                }
+            }
+            .should-pay{
+                margin-left: 60px;
+                // margin-right: 122px;
+                span{
+                    margin-left: 30px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: red;
+                }
+            }
+            .pay-now{
+                height: 100%;
+                width: 140px;
+                color: #fff;
+                font-size: 16px;
+                background: #b4a078;
+                border: none;
+                outline: none;
+                margin-left: 122px;
+            }
+            
+        }
+    }
+}
