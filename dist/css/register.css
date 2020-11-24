@@ -27,7 +27,8 @@
 
 #content-wrap {
   background: #f8f8f8;
-  padding-top: 22px; }
+  padding-top: 22px;
+  padding-bottom: 40px; }
   #content-wrap .content {
     background: #fff; }
     #content-wrap .content .mid-content {

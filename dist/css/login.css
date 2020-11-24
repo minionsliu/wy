@@ -1,0 +1,73 @@
+#banner {
+  height: 600px;
+  background: url("//yanxuan.nosdn.127.net/6c20940c7b36612b0ed4d7b0a8a4aafe.jpg") center top no-repeat;
+  position: relative; }
+  #banner .login {
+    padding-top: 25px;
+    position: absolute;
+    right: 120px;
+    top: 100px;
+    width: 384px;
+    height: 400px;
+    background: #fff;
+    z-index: 88; }
+    #banner .login .login-h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 44px;
+      line-height: 32px; }
+      #banner .login .login-h2 i {
+        margin: 0 55px;
+        font-size: 20px;
+        color: #d8cacc; }
+      #banner .login .login-h2 span {
+        cursor: pointer; }
+    #banner .login .input-box {
+      width: 300px;
+      height: 38px;
+      margin: 0 auto;
+      position: relative;
+      padding: 8px 0; }
+      #banner .login .input-box input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #e8e8e8;
+        outline: none;
+        text-indent: 40px; }
+      #banner .login .input-box input::placeholder {
+        color: #bdbdbd; }
+      #banner .login .input-box span {
+        position: absolute;
+        left: 10px;
+        top: 18px;
+        width: 29px;
+        height: 24px;
+        color: #e8e8e8;
+        text-align: right;
+        font-size: 16px;
+        line-height: 16px; }
+      #banner .login .input-box .input-bg-txt {
+        background: url("//yanxuan.nosdn.127.net/d6bd29fcf2096cb4c5d338e0fce13919.png") no-repeat; }
+      #banner .login .input-box .input-bg-psw {
+        background: url("//yanxuan.nosdn.127.net/178e29b95f152a8aa6490f4f7032a8e8.png") no-repeat; }
+    #banner .login .input-box-2 {
+      margin-bottom: 40px; }
+    #banner .login .login-btn {
+      display: block;
+      margin: 0 auto;
+      background: #b4a078;
+      color: #fff;
+      font-size: 18px;
+      width: 300px;
+      height: 48px;
+      outline: none;
+      border: none;
+      letter-spacing: 5px; }
+    #banner .login .login-btm {
+      margin-top: 60px;
+      text-align: right;
+      padding: 18px 30px 0;
+      line-height: 40px;
+      background: #f5f3ef; }
+      #banner .login .login-btm a {
+        color: #b7b7b5; }
