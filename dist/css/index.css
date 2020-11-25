@@ -99,6 +99,11 @@ body {
     .login .login-btm a {
       color: #b7b7b5; }
 
+.main-swiper {
+  height: 420px; }
+  .main-swiper .main-slide {
+    background: url(../img/banner.png) center top no-repeat; }
+
 #main {
   min-height: 1000px; }
   #main .goods-show {

@@ -158,22 +158,23 @@
   width: 100%;
   z-index: 9999; }
   #nav .nav-list-wrap .nav-list {
-    padding-top: 26px;
     clear: both; }
     #nav .nav-list-wrap .nav-list ul {
-      height: 28px;
-      line-height: 28px; }
+      height: 51px;
+      line-height: 51px;
+      display: flex; }
       #nav .nav-list-wrap .nav-list ul li {
         box-sizing: border-box;
         font-size: 14px;
         font-weight: 600;
-        float: left;
-        margin-left: 55px;
+        flex: 1;
+        text-align: center;
+        margin: 0 20px;
         border-bottom: 3px solid transparent; }
         #nav .nav-list-wrap .nav-list ul li a {
           color: #000; }
         #nav .nav-list-wrap .nav-list ul li .list-box {
-          width: 1000px;
+          height: 458px;
           position: absolute;
           left: 0;
           right: 0;
@@ -182,14 +183,18 @@
           background: #fff;
           overflow: hidden;
           display: none;
-          z-index: 999; }
+          z-index: 99999;
+          box-sizing: border-box;
+          padding-left: 18px;
+          overflow-y: auto; }
           #nav .nav-list-wrap .nav-list ul li .list-box dl {
             width: 124px;
             float: left;
             padding: 0 8px; }
             #nav .nav-list-wrap .nav-list ul li .list-box dl dt {
               font-size: 16px;
-              border-bottom: 1px solid gray; }
+              border-bottom: 1px solid #e8e8e8;
+              margin-bottom: 10px; }
             #nav .nav-list-wrap .nav-list ul li .list-box dl dd a {
               display: block;
               overflow: hidden; }
@@ -231,8 +236,8 @@
 
 #sidebar .side-left {
   z-index: 999;
-  position: fixed;
-  top: 65px;
+  position: absolute;
+  top: 445px;
   left: 0;
   width: 110px;
   box-sizing: border-box;
@@ -267,10 +272,10 @@
 
 #sidebar .side-right {
   text-align: center;
-  position: fixed;
+  position: absolute;
   z-index: 999;
   right: 0;
-  top: 65px;
+  top: 445px;
   background: #fff;
   width: 72px; }
   #sidebar .side-right img {

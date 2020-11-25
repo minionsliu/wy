@@ -575,15 +575,13 @@ function jsonp(options) {
   oScript.onload = function () {
     document.body.removeChild(oScript);
   };
-}
+} // function $1(selector){
+//   return document.querySelector(selector)
+// }
+// function $2(selector){
+//   return document.querySelectorAll(selector)
+// }
 
-function $1(selector) {
-  return document.querySelector(selector);
-}
-
-function $2(selector) {
-  return document.querySelectorAll(selector);
-}
 
 function promiseAjax(options) {
   return new Promise(function (resolve, reject) {

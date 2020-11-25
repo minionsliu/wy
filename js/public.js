@@ -508,12 +508,12 @@ function jsonp(options){
   }
 }
 
-function $1(selector){
-  return document.querySelector(selector)
-}
-function $2(selector){
-  return document.querySelectorAll(selector)
-}
+// function $1(selector){
+//   return document.querySelector(selector)
+// }
+// function $2(selector){
+//   return document.querySelectorAll(selector)
+// }
 
 
 function promiseAjax(options){

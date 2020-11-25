@@ -31,6 +31,13 @@ task('html', async ()=>{
   .pipe(dest('./dist'))
   .pipe(load.connect.reload())
 })
+
+//处理data数据
+task('data', async ()=>{
+  src('./data/*.json')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
 //编译font
 task('font', async ()=>{
   src('./font/*.*')
@@ -62,4 +69,4 @@ task('connect', async ()=>{
   })
 })
 
-task('dev', series('delDist','img','html','script','sass','connect','watch'))
+task('dev', series('delDist','img','html','data','script','sass','connect','watch'))
