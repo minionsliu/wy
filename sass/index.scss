@@ -7,6 +7,14 @@
 .sprite-m{
     background: url(../img/wy-top.png) no-repeat;
 }
+
+// banner
+.main-swiper{
+    height: 420px;
+    .main-slide{
+        background: url(../img/banner.png) center top no-repeat;
+    }
+}
 //蒙层mask
 body{
     position: relative;
@@ -19,7 +27,7 @@ body{
     height: 100%;
     // display: none;
     background: rgba(0,0,0,0.6);
-    z-index: 2000;
+    z-index: 99999;
     display: none;
 }
 //login弹窗
@@ -35,7 +43,7 @@ body{
     width: 384px;
     height: 400px;
     background: #fff;
-    z-index: 9999;
+    z-index: 999999;
     .login-close{
         position: absolute;
         right: 5px;
@@ -57,6 +65,12 @@ body{
         span{
             cursor: pointer;
         }
+    }
+    #message{
+        height: 15px;
+        margin-left: 40px;
+        line-height: 15px;
+        color: red;
     }
     .input-box{
         width: 300px;
@@ -120,14 +134,6 @@ body{
     }
 
 }
-// banner
-.main-swiper{
-    height: 420px;
-    .main-slide{
-        background: url(../img/banner.png) center top no-repeat;
-    }
-}
-
 
 
 // 主要内容main

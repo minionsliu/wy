@@ -5,6 +5,11 @@
 .sprite-m {
   background: url(../img/wy-top.png) no-repeat; }
 
+.main-swiper {
+  height: 420px; }
+  .main-swiper .main-slide {
+    background: url(../img/banner.png) center top no-repeat; }
+
 body {
   position: relative; }
 
@@ -15,7 +20,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 2000;
+  z-index: 99999;
   display: none; }
 
 .login {
@@ -30,7 +35,7 @@ body {
   width: 384px;
   height: 400px;
   background: #fff;
-  z-index: 9999; }
+  z-index: 999999; }
   .login .login-close {
     position: absolute;
     right: 5px;
@@ -49,6 +54,11 @@ body {
       color: #d8cacc; }
     .login .login-h2 span {
       cursor: pointer; }
+  .login #message {
+    height: 15px;
+    margin-left: 40px;
+    line-height: 15px;
+    color: red; }
   .login .input-box {
     width: 300px;
     height: 38px;
@@ -98,11 +108,6 @@ body {
     background: #f5f3ef; }
     .login .login-btm a {
       color: #b7b7b5; }
-
-.main-swiper {
-  height: 420px; }
-  .main-swiper .main-slide {
-    background: url(../img/banner.png) center top no-repeat; }
 
 #main {
   min-height: 1000px; }

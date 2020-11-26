@@ -44,7 +44,7 @@
         position: absolute;
         left: 2px;
         top: 31px;
-        z-index: 999;
+        z-index: 999999;
         display: none; }
         #header #mid-wrap ul li .top-list .sj {
           margin: 0 auto;
@@ -192,6 +192,7 @@
             float: left;
             padding: 0 8px; }
             #nav .nav-list-wrap .nav-list ul li .list-box dl dt {
+              text-align: left;
               font-size: 16px;
               border-bottom: 1px solid #e8e8e8;
               margin-bottom: 10px; }

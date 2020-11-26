@@ -89,18 +89,13 @@ xhr.onreadystatechange=function (){
 }
 
 function suc(data){
-  // console.log(data['code']);
   // 渲染navlist
   data['data']['cateList'].forEach(function(item,index){
     $('ul .litop').eq(index).children('a').text(item.name);
-    // console.log(item["subCateGroupList"].length);
     var listbox_wid = item["subCateGroupList"].length * 145 + 'px';
     $('ul .litop').eq(index).children('.list-box').css('width',listbox_wid)
-    // console.log(item);
     item["subCateGroupList"].forEach(function(itm,ind){
-      // console.log(itm);
         var dl = $('<dl><dt>'+itm['name']+'</dt></dl>');
-        
         itm['categoryList'].forEach(function(tem,idx){
           var dl_dd = `
           <dd>

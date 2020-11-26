@@ -102,16 +102,12 @@ $(function () {
   };
 
   function suc(data) {
-    // console.log(data['code']);
     // 渲染navlist
     data['data']['cateList'].forEach(function (item, index) {
-      $('ul .litop').eq(index).children('a').text(item.name); // console.log(item["subCateGroupList"].length);
-
+      $('ul .litop').eq(index).children('a').text(item.name);
       var listbox_wid = item["subCateGroupList"].length * 145 + 'px';
-      $('ul .litop').eq(index).children('.list-box').css('width', listbox_wid); // console.log(item);
-
+      $('ul .litop').eq(index).children('.list-box').css('width', listbox_wid);
       item["subCateGroupList"].forEach(function (itm, ind) {
-        // console.log(itm);
         var dl = $('<dl><dt>' + itm['name'] + '</dt></dl>');
         itm['categoryList'].forEach(function (tem, idx) {
           var dl_dd = "\n          <dd>\n          <a href=\"#\">\n              <img src=".concat(tem['bannerUrl'], " alt=\"\">\n              <span>").concat(tem['name'], "</span>\n          </a>\n          </dd>\n          ");

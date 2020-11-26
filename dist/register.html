@@ -22,25 +22,31 @@
         <div class="mid-content">
             <h2>请输入要注册的邮箱和密码</h2>
             <div class="input-box-rg">
-                <input type="text" placeholder="请输入邮箱地址">
+                <input id="loginName" type="text" placeholder="请输入邮箱地址">
             </div>
+            <span id="message">请输入要注册的邮箱</span>
             <div class="input-box-rg">
-                <input type="password" placeholder="请输入8-16位密码">
+                <input id="loginPsd" type="password" placeholder="请输入密码">
                 <span class="can-see">
                     <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2827541679,285253789&fm=26&gp=0.jpg" alt="">
                 </span>
             </div>
+            <div class="input-box-rg">
+                <input id="loginPsd2" type="password" placeholder="请再次输入密码">
+            </div>
             <p>
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="if-read">
                 <span>用户勾选即代表同意</span>
                 <a href="#">《网易邮箱服务条款》</a> 和<a href="#">《网易隐私政策》</a>
             </p>
-            <button>注册</button>
+            <button id="register">注册</button>
             <p>
                 已有账号?<a href="http://localhost:3000/login.html">去登录</a>
             </p>
         </div>
     </div>
 </div>
+<script src="./js/jquery-1.8.3.js"></script>
+<script src="./js/register.js"></script>
 </body>
 </html>

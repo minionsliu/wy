@@ -41,6 +41,10 @@
         font-weight: 600;
         color: #2c82ff;
         margin-bottom: 40px; }
+      #content-wrap .content .mid-content #message {
+        color: red;
+        display: block;
+        text-indent: 30px; }
       #content-wrap .content .mid-content .input-box-rg {
         padding: 20px 0;
         width: 486px;

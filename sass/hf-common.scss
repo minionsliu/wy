@@ -57,7 +57,7 @@
                    position: absolute;
                    left: 2px;
                    top: 31px;
-                   z-index: 999;
+                   z-index: 999999;
                 //    background: #ffffff;
                     // background: #fff;
                    display: none;
@@ -245,6 +245,7 @@
                              float: left;
                              padding: 0 8px;
                                  dt{
+                                     text-align: left;
                                      font-size: 16px;
                                      border-bottom: 1px solid #e8e8e8;
                                      margin-bottom: 10px;
@@ -397,8 +398,6 @@
         }
     }
 }
-
-
 
 
 // 公共底部

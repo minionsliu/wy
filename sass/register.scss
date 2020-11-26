@@ -49,6 +49,11 @@
                 color: #2c82ff;
                 margin-bottom: 40px;
             }
+            #message{
+                color: red;
+                display: block;
+                text-indent: 30px;
+            }
             .input-box-rg{
                 padding: 20px 0;
                width: 486px;
@@ -61,6 +66,7 @@
                    border:1px solid#dcdee2;
                    text-indent: 20px;
                }
+               
                .can-see{
                    position: absolute;
                    width: 19px;

@@ -26,6 +26,12 @@
                 cursor: pointer;
             }
         }
+        #message{
+            height: 15px;
+            margin-left: 40px;
+            line-height: 15px;
+            color: red;
+        }
         .input-box{
             width: 300px;
             height: 38px;
@@ -53,6 +59,7 @@
                 font-size: 16px;
                 line-height: 16px;
            }
+          
            .input-bg-txt{
             background: url("//yanxuan.nosdn.127.net/d6bd29fcf2096cb4c5d338e0fce13919.png")  no-repeat;
            }
