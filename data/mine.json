@@ -1,0 +1,52 @@
+{
+    "goodslist":[
+        {   
+            "showindex":"0",
+            "title":"2020新果上市，南非碧根仁150克",
+            "imgurl":{
+                "indeximg":["https://yanxuan-item.nosdn.127.net/5aad81bd22e540dae6b6f34770692c04.png?type=webp&quality=95&thumbnail=265x265&imageView",
+                            "https://yanxuan-item.nosdn.127.net/9aea73d35d31b1afab3c4f073e8cbd1c.jpg?type=webp&quality=95&thumbnail=265x265&imageView"],
+                "goodsimg":{}
+            },
+            "price":"¥100",
+            "code":"abc0",
+            "size":"150克"
+        },
+        {   
+            "showindex":"1",
+            "title":"1212省钱卡 花6元得46元",
+            "imgurl":{
+                "indeximg":["https://yanxuan-item.nosdn.127.net/ba62c3e6d451c07dbcd95b5325b352eb.png?type=webp&quality=95&thumbnail=265x265&imageView",
+                            "https://yanxuan-item.nosdn.127.net/eb06c0e1702588242cd35088b20e45f9.png?type=webp&quality=95&thumbnail=265x265&imageView"],
+                "goodsimg":{}
+            },
+            "price":"¥6",
+            "code":"abc1",
+            "size":"一张卡"
+        },
+        {   
+            "showindex":"2",
+            "title":"奶香浓郁四层夹心 俄罗斯冰淇淋威化饼干",
+            "imgurl":{
+                "indeximg":["https://yanxuan-item.nosdn.127.net/04aa3b8c1920183bf66a4fbaf236d3c0.png?type=webp&quality=95&thumbnail=265x265&imageView",
+                            "https://yanxuan-item.nosdn.127.net/603ce10d7ac735d3370f013e17902f05.png?type=webp&quality=95&thumbnail=265x265&imageView"],
+                "goodsimg":{}
+            },
+            "price":"¥88",
+            "code":"abc2",
+            "size":"500克"
+        },
+        {   
+            "showindex":"3",
+            "title":"橘味甜水炸弹 临海涌泉蜜桔 5斤",
+            "imgurl":{
+                "indeximg":["https://yanxuan-item.nosdn.127.net/6e7d68d8d75bd2462b7ea76901920548.png?type=webp&quality=95&thumbnail=265x265&imageView",
+                            "https://yanxuan-item.nosdn.127.net/9be0f0c16d7fbafacee94ecc2d995ee8.jpg?type=webp&quality=95&thumbnail=265x265&imageView"],
+                "goodsimg":{}
+            },
+            "price":"¥66",
+            "code":"abc3",
+            "size":"5斤"
+        }
+    ]
+}

@@ -110,36 +110,44 @@
         cursor: pointer; }
     .shopcar-wrap .shopcar-box .buy-now {
       height: 70px;
-      display: flex;
-      align-items: center;
-      padding-left: 20px; }
+      padding-left: 20px;
+      box-sizing: border-box;
+      padding-top: 20px; }
       .shopcar-wrap .shopcar-box .buy-now .all {
-        margin-right: 15px; }
+        margin-right: 15px;
+        float: left; }
       .shopcar-wrap .shopcar-box .buy-now i {
-        margin-right: 38px; }
+        margin-right: 38px;
+        float: left; }
       .shopcar-wrap .shopcar-box .buy-now .delete-some {
-        margin-right: 32px; }
+        margin-right: 32px;
+        float: left; }
       .shopcar-wrap .shopcar-box .buy-now .delete-erro {
-        margin-right: 190px; }
+        margin-right: 190px;
+        float: left; }
       .shopcar-wrap .shopcar-box .buy-now .goods-price-a {
-        color: #999; }
+        color: #999;
+        float: left;
+        width: 200px; }
         .shopcar-wrap .shopcar-box .buy-now .goods-price-a .price-all {
           margin-left: 40px; }
         .shopcar-wrap .shopcar-box .buy-now .goods-price-a .price-yh {
           margin-left: 50px; }
       .shopcar-wrap .shopcar-box .buy-now .should-pay {
-        margin-left: 60px; }
+        margin-left: 60px;
+        float: left; }
         .shopcar-wrap .shopcar-box .buy-now .should-pay span {
           margin-left: 30px;
           font-size: 20px;
           font-weight: 600;
           color: red; }
       .shopcar-wrap .shopcar-box .buy-now .pay-now {
-        height: 100%;
+        height: 68px;
         width: 140px;
         color: #fff;
         font-size: 16px;
         background: #b4a078;
         border: none;
         outline: none;
-        margin-left: 122px; }
+        float: right;
+        margin-top: -20px; }

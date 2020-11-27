@@ -143,23 +143,34 @@
         }
         .buy-now{
             height: 70px;
-            display: flex;
-            align-items: center;
+            // display: flex;
+            // align-items: center;
             padding-left: 20px;
+            box-sizing: border-box;
+            padding-top: 20px;
             .all{
                 margin-right: 15px;
+                float: left;
             }
             i{
                 margin-right: 38px;
+                float: left;
+
             }
             .delete-some{
                 margin-right: 32px;
+                float: left;
+
             }
             .delete-erro{
                 margin-right: 190px;
+                float: left;
+
             }
             .goods-price-a{
                 color: #999;
+                float: left;
+                width: 200px;
                 .price-all{
                     margin-left: 40px;
                 }
@@ -169,6 +180,8 @@
             }
             .should-pay{
                 margin-left: 60px;
+                float: left;
+
                 // margin-right: 122px;
                 span{
                     margin-left: 30px;
@@ -178,14 +191,17 @@
                 }
             }
             .pay-now{
-                height: 100%;
+                height: 68px;
                 width: 140px;
                 color: #fff;
                 font-size: 16px;
                 background: #b4a078;
                 border: none;
                 outline: none;
-                margin-left: 122px;
+                // margin-left: 122px;
+                float: right;
+                margin-top: -20px;
+
             }
             
         }

@@ -34,84 +34,52 @@ var mySwiper1 = new Swiper ('.index-goods', {
   },
 }) 
 
-//头部导航/侧栏吸顶
-var navLW = document.querySelector('.nav-list-wrap');
-var sideLeft = document.querySelector('.side-left');
-var sideRight = document.querySelector('.side-right');
-window.onscroll = function(){
-    if(document.documentElement.scrollTop >= 187){
-      navLW.style.position= 'fixed';
-      navLW.style.left = 0;
-      navLW.style.top = 0;
-    }else if(document.documentElement.scrollTop<=133){
-      navLW.style.position = 'relative';
-    }
-    if(document.documentElement.scrollTop>=380){
-      sideLeft.style.position = 'fixed';
-      sideRight.style.position = 'fixed';
-      sideLeft.style.top = 65+'px';
-      sideRight.style.top = 65 +'px';
-    }else{
-      sideLeft.style.position = 'absolute';
-      sideRight.style.position = 'absolute';
-      sideLeft.style.top = 445+'px';
-      sideRight.style.top = 445 +'px';
-    }
-}
-
-
-//首页登录注册点击事件
-$('.login-open').click(function(){
-  $('.login').css('display','block')
-  $('.mask').css('display','block')
-})
-$('.login-close').click(function(){
-  $('.login').css('display','none')
-  $('.mask').css('display','none')
-})
-
+// ajax
 if(window.XMLHttpRequest){ 
-  var xhr=new XMLHttpRequest();
+  var xhr1=new XMLHttpRequest();
 }else{ 
-  var xhr=new ActiveXObject("Microsoft.XMLHTTP");
+  var xhr1=new ActiveXObject("Microsoft.XMLHTTP");
 };
-xhr.open('get','../data/wy_header.json');
-xhr.send(null);
-xhr.onreadystatechange=function (){
-  if (xhr.readyState==4) { 
-      if (xhr.status==200) { 
-        var data = JSON.parse(xhr.responseText);
-          suc(data)
+xhr1.open('get','../data/mine.json');
+xhr1.send(null);
+xhr1.onreadystatechange=function (){
+  if (xhr1.readyState==4) { 
+      if (xhr1.status==200) { 
+        var data = JSON.parse(xhr1.responseText);
+          success(data)
       } else{
-          alert( xhr.status ); 
+          alert( xhr1.status ); 
       };
   }; 
 }
+//数据成功
+function success(data){
+// console.log(data);
+var $inner = $('.goods-show-inner');
+// console.log($inner);
+$.each($inner,function(index,item){
+  // console.log(item);
+  var id = getRand(0,3);
+  var url = data.goodslist[id]['imgurl']['indeximg'][1];
+  var dectxt = data.goodslist[id]['title'];
+  var price = data.goodslist[id]['price'];
+  var code = data.goodslist[id]['code'];
+  $(item).children('.goods-show-img').children('img').attr('src',url)
+  $(item).children('a').children('span').text(dectxt);
+  $(item).children('a').children('i').text(price);
+  $(item).attr('code',code);
 
-function suc(data){
-  // 渲染navlist
-  data['data']['cateList'].forEach(function(item,index){
-    $('ul .litop').eq(index).children('a').text(item.name);
-    var listbox_wid = item["subCateGroupList"].length * 145 + 'px';
-    $('ul .litop').eq(index).children('.list-box').css('width',listbox_wid)
-    item["subCateGroupList"].forEach(function(itm,ind){
-        var dl = $('<dl><dt>'+itm['name']+'</dt></dl>');
-        itm['categoryList'].forEach(function(tem,idx){
-          var dl_dd = `
-          <dd>
-          <a href="#">
-              <img src=${tem['bannerUrl']} alt="">
-              <span>${tem['name']}</span>
-          </a>
-          </dd>
-          `
-          dl.append(dl_dd);
-        })
-      $('ul .litop').eq(index).children('.list-box').append(dl);
-    })
-    
-  })
+})
+// index点击商品事件
+$inner.click(function(){
+  var code = $(this).attr('code');
+  // alert(code);
+  window.location.href = 'http://localhost:3000/goods.html?code='+code;
+})
+
 }
+
+
 
 
 

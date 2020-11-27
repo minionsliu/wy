@@ -59,3 +59,79 @@ function offset(dom,bool){
         return {"left" : l - bdl,"top":t - bdt}
     }
 }
+
+
+// ajax
+if(window.XMLHttpRequest){ 
+    var xhr1=new XMLHttpRequest();
+  }else{ 
+    var xhr1=new ActiveXObject("Microsoft.XMLHTTP");
+  };
+  xhr1.open('get','../data/mine.json');
+  xhr1.send(null);
+  xhr1.onreadystatechange=function (){
+    if (xhr1.readyState==4) { 
+        if (xhr1.status==200) { 
+          var data = JSON.parse(xhr1.responseText);
+            finish(data)
+        } else{
+            alert( xhr1.status ); 
+        };
+    }; 
+  }
+// 
+function finish(data){
+
+    // 通过url查询字符串获取对应图片
+    var urlsearch = window.location.search;
+    var searchStr = urlsearch.substr(1);
+    var searchArr = searchStr.split('=');
+    var pagecode = searchArr[1];
+    // console.log(pagecode); 
+    // 
+    $.each(data['goodslist'],function(index,item){
+        if(item['code'] == pagecode){
+            $('.min img').attr('src',item['imgurl']['indeximg'][1]);
+            $('.max img').attr('src',item['imgurl']['indeximg'][1]);
+            $('.dec-h3 b').text(item['title']);
+            $('.dev-msg-price').text(item['price']);
+        }
+    })
+    // 
+    
+    // 点击加入购物车
+    $('.goods-tocar').click(function(){
+        var n = Number($('.input-num').val());
+        // console.log($('.goods-num input'));
+        // console.log(n);
+        // console.log(n);
+        // 初始化
+        if(localStorage.getItem('goods')){
+            var goodsArr = JSON.parse(localStorage.getItem('goods'));
+        }else{
+            var goodsArr = [];
+        }
+        // 判断是否存在
+        // var code = pagecode;
+        var hasGoods = false;
+        if(goodsArr.length>0){
+            $.each(goodsArr,function(index,item){
+                if(pagecode === item.code){
+                    item.num +=n;
+                    // console.log(1);
+                    hasGoods = true;
+                }
+            })
+        }
+        
+        if(!hasGoods){
+            goodsArr.push({code:pagecode,num:n})
+        }
+        localStorage.setItem('goods',JSON.stringify(goodsArr));
+        alert('添加购物车成功')
+    })
+    
+
+
+    
+}
